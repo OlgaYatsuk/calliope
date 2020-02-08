@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Austria</title>
+  <!--<script src="js/jquery.min.js" type="text/javascript"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="vertical-lines">
+  <div class="vertical-lines__line js-lines"></div>
+  <div class="vertical-lines__line js-lines"></div>
+  <div class="vertical-lines__line js-lines"></div>
+</div>
+<header class="mobile-header">
+  <button class="mob-language__button js-lang">En</button>
+  <div class="mob-language__menu js-lang-menu">
+    <a href="#" class="mob-language__link">DE</a>
+    <a href="#" class="mob-language__link">UA</a>
+  </div>
+  <button class="burger js-menu-toggler"></button>
+</header>
+
+
+<div class="burger__wrapper js-burger-menu">
+  <div class="vertical-lines">
+    <div class="vertical-lines__line js-lines"></div>
+    <div class="vertical-lines__line js-lines"></div>
+    <div class="vertical-lines__line js-lines"></div>
+  </div>
+  <div class="container">
+    <nav class="burger__nav">
+      <a href="/" class="burger__nav-item active">Home</a>
+      <a href="/about.html" class="burger__nav-item">About</a>
+      <a href="/team.html" class="burger__nav-item">Team</a>
+      <a href="/events.html" class="burger__nav-item">Events</a>
+      <a href="/impressions.html" class="burger__nav-item">Impressions</a>
+      <a href="/publications.html" class="burger__nav-item">Publications</a>
+      <a href="/education.html" class="burger__nav-item">Education</a>
+    </nav>
+    <div class="burger__contacts">
+      <div class="burger__contacts-section">
+        <p class="contacts__title">Austrian Cultural forum Kyiv</p>
+        <a href="#" class="contacts__item">Austrian Cultural forum Kyiv</a>
+        <a href="mailto:kiew-kf@bmeia.gv.at" class="contacts__item">kiew-kf@bmeia.gv.at</a>
+        <a href="tel:+380442772790" class="contacts__item">(+380) 44 - 277 27 90</a>
+        <a href="#" class="contacts__facebook"></a>
+      </div>
+      <div class="burger__contacts-section">
+        <p class="contacts__title">Austrian Cooperation Office Lviv</p>
+        <a href="#" class="contacts__item">Austrian Cultural forum Kyiv</a>
+        <a href="mailto:kiew-kf@bmeia.gv.at" class="contacts__item">kiew-kf@bmeia.gv.at</a>
+        <a href="tel:+380442772790" class="contacts__item">(+380) 44 - 277 27 90</a>
+        <a href="#" class="contacts__facebook"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="language-toogler">
+  <a href="#" class="language-toogler__link is-active">DE</a>
+  <a href="#" class="language-toogler__link">Укр</a>
+  <a href="#" class="language-toogler__link">En</a>
+</div>
+<!--&lt;!&ndash;</nav>-->
+
+<main class="events">
+  <div class="container">
+    <section class="filters">
+      <h2 class="page-title">Events</h2>
+      <div class="events__text-block">
+        <h2 class="events__caption">
+          Ipsum do cillum nostrud sit duis eu magna excepteur sit ad excepteur nulla sunt adipisicing.
+        </h2>
+        <div>
+          <p class="events__title">Aute cupidatat culpa in pariatur duis dolor nulla.</p>
+          <p class="events__text">Nostrud velit cupidatat nostrud occaecat dolor adipisicing sit irure reprehenderit pariatur minim.</p>
+        </div>
+      </div>
+      <div class="filter">
+        <div class="filter-section">
+          <div class="filter-item">
+            <p class="filter-item__name">Sector</p>
+            <button class="label label--white js-selected-filter" data-filter-group="sector">Festival</button>
+            <div class="filter-list js-filters" data-filter-group="sector">
+              <a href="#" data-filter=".film" class="filter-list__item js-filter-event js-sector">Film</a>
+              <a href="#" data-filter=".music" class="filter-list__item js-filter-event js-sector">Music</a>
+              <a href="#" data-filter=".vizualne-mystetstvo" class="filter-list__item js-filter-event js-sector">Visual Art</a>
+              <a href="#" data-filter=".literature" class="filter-list__item js-filter-event js-sector">Literature</a>
+              <a href="#" data-filter=".theatre" class="filter-list__item js-filter-event js-sector">Theatre</a>
+              <a href="#" data-filter=".urban" class="filter-list__item js-filter-event js-sector">Urban Planning</a>
+            </div>
+          </div>
+          <div class="filter-item">
+            <p class="filter-item__name">Type</p>
+            <button class="label label--white js-selected-filter">Film</button>
+            <div class="filter-list js-filters"  data-filter-group="type">
+              <a href="#" data-filter=".festival" class="filter-list__item js-filter-event js-type">Festival</a>
+              <a href="#" data-filter=".exhibition" class="filter-list__item js-filter-event js-type">Exhibition</a>
+              <a href="#" data-filter=".lecture" class="filter-list__item js-filter-event js-type">Lecture</a>
+              <a href="#" data-filter=".concert" class="filter-list__item js-filter-event js-type">Concert</a>
+              <a href="#" data-filter=".presentation" class="filter-list__item js-filter-event js-type">Presentation</a>
+              <a href="#" data-filter=".discussion" class="filter-list__item js-filter-event js-type">Discussion</a>
+              <a href="#" data-filter=".conference" class="filter-list__item js-filter-event js-type">Conference</a>
+              <a href="#" data-filter=".master-class" class="filter-list__item js-filter-event js-type">Master class</a>
+              <a href="#" data-filter=".performance" class="filter-list__item js-filter-event js-type">Performance</a>
+              <a href="#" data-filter=".screening" class="filter-list__item js-filter-event js-type">Screening</a>
+            </div>
+          </div>
+        </div>
+        <div class="filter-section">
+          <div class="filter-item">
+            <p class="filter-item__name">Month</p>
+            <button class="label label--white js-selected-filter" data-filter-group="price">Free</button>
+            <div class="filter-list js-filters"  data-filter-group="price">
+              <a href="#" data-filter=".free" class="filter-list__item js-filter-event js-price">Free</a>
+              <a href="#" data-filter=".buy" class="filter-list__item js-filter-event js-price">Buy a ticket</a>
+            </div>
+          </div>
+          <div class="filter-item">
+            <p class="filter-item__name">Price</p>
+            <button class="label label--white js-selected-filter">Austria</button>
+            <div class="filter-list js-filters" data-filter-group="country">
+              <a href="#" data-filter=".austria" class="filter-list__item js-filter-event js-location">Austria</a>
+              <a href="#" data-filter=".ukraine" class="filter-list__item js-filter-event js-location">Ukraine</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="events-wrapper is-active js-events-wrapper container">
+    <h3 class="label label--light-blue label--next-month may is-active js-month-label">Травень</h3>
+    <div class="event js-event all may  vizualne-mystetstvo  majster-klas perfomans festyval ukraine buy">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/11-1.jpg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">02.05-06.05</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading" href="http://austriaukraine2019.com/uk/events/vystup-zhasmin-shajtl-na-festyvali-zabih/">Виступ
+          Жасмін Шайтль на фестивалі ZABIH</a>
+        <p class="text text--event-info">ZABIH - перформанс-проект, створений випускниками школи перфомансу, як
+          платформа для експерименту, розвитку та пошуку нових шляхів у цьому мистецтві...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Візуальне мистецтво</p>
+          <p class="label label--light-blue label--event">Майстер-клас</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="events-wrapper js-events-wrapper container">
+    <h3 class="label label--light-blue label--next-month js-month-label april">Квітень</h3>
+    <div class="event js-event all april  muzyka  kontsert festyval ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/7.jpg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">27.04-29.04</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/first-gig-never-happened-na-festyvali-zaporizhzhia-jazzy-fest/">„First
+          Gig Never Happened“ на фестивалі Zaporizhzhia Jazzy Fest</a>
+        <p class="text text--event-info">Дводенний джазовий фестиваль, заснований у 2018 році Запорізькою міською радою,
+          у 2019 році відбудеться на трьох сценах...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Музика</p>
+          <p class="label label--light-blue label--event">Концерт</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all april  muzyka  kontsert austria free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/13-1.png" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">23.04.2019</p>
+          <p class="event__label-time">19:30</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/id-tradytsij-do-suchasnosti-muzyka-z-ukrayiny-ta-vsogo-svitu/">Від
+          традицій до сучасності. Музика з України та всього світу</a>
+        <p class="text text--event-info">У контексті III Днів української культури у Відні / U Stream Fest знову
+          відбудеться великий концерт української музики у Віденському концертному залі...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Музика</p>
+          <p class="label label--light-blue label--event">Концерт</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all april  fotografiya  vystavka lektsiya ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/op_19-06-1920x1080.png" alt=""
+             class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">17.04.2019</p>
+          <p class="event__label-time"></p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/avstrijski-fotografy-na-festyvali-odessa-photo-days/">Австрійські
+          фотографи на фестивалі Odessa Photo Days</a>
+        <p class="text text--event-info">Цього року вп'яте відбудеться єдиний в Україні міжнародний фестиваль сучасної
+          фотографії в Одесі під девізом "Точка зору // StandPoint"...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Фотографія</p>
+          <p class="label label--light-blue label--event">Виставка</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all april  muzyka  kontsert ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/9-1.png" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">15.04.2019</p>
+          <p class="event__label-time"></p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading" href="http://austriaukraine2019.com/uk/events/organnyj-kontsert-stefana-donnera/">Органний
+          концерт Стефана Доннера</a>
+        <p class="text text--event-info">Видатний австрійський органіст Cтефан Доннер зіграє твори класичних та сучасних
+          австрійських композиторів (Вольфганг Заузенг, В. А. Моцарт, Макс Регер, Йозеф Райнбергер)...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Музика</p>
+          <p class="label label--light-blue label--event">Концерт</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all april  muzyka  kontsert festyval ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/63ad4ca5af0acc528ef30c94debe81bb.jpg" alt=""
+             class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">01.04.2019</p>
+          <p class="event__label-time"></p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/vystup-ruperta-bergmanna-v-ramkah-festyvalyu-dva-dni-j-dvi-nochi-novoyi-muzyky-25-j-yuvilej-festyvalyu/">Виступ
+          Руперта Бергманна в рамках фестивалю Два дні й дві ночі нової музики</a>
+        <p class="text text--event-info">Фестиваль є одним з найбільших форумів нової музики в Україні та зацікавить
+          любителів усіх видів авангардної, модерної та постмодерної музики, включаючи електроніку...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Музика</p>
+          <p class="label label--light-blue label--event">Концерт</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="events-wrapper js-events-wrapper container">
+    <h3 class="label label--light-blue label--next-month js-month-label march">Березень</h3>
+    <div class="event js-event all march  vizualne-mystetstvo  vystavka ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/8.jpeg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">01.03-31.03</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/vystavka-200-richchya-pisni-tyha-nich-svyata-nich/">Виставка
+          &#8220;200-річчя пісні “Тиха ніч! Свята ніч!”</a>
+        <p class="text text--event-info">З нагоди 200-річчя створення пісні "Тиха ніч" у співпраці з Зальцбургом була
+          розроблена невелика виставка, що розповідає про пісню...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Візуальне мистецтво</p>
+          <p class="label label--light-blue label--event">Виставка</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all march  muzyka  kontsert festyval ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/01/event-hero.png" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">16.03-17.03</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading" href="http://austriaukraine2019.com/uk/events/vystup-duoaliada/">Виступ дуету Aliada на
+          фестивалі &#8220;Дні українського баяна та акордеона&#8221;</a>
+        <p class="text text--event-info">Фестиваль присвячений популяризації таких традиційних для української музичної
+          культури інструментів як баян та акордеон.</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Музика</p>
+          <p class="label label--light-blue label--event">Концерт</p>
+          <div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="event js-event all march  innovatsiyi  dyskusiya konferentsiya lektsiya prezentatsiya ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/12-1.jpg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">05.03-06.03</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/avstrijsko-ukrayinskyj-den-vidnovlyuvalnoyi-energiyi/">АВСТРІЙСЬКО-УКРАЇНСЬКИЙ
+          ДЕНЬ ВІДНОВЛЮВАЛЬНОЇ ЕНЕРГІЇ</a>
+        <p class="text text--event-info">З метою розгляду актуальних проблем, передового досвіду, новітніх технологій і
+          закладання основ для розширення співпраці між Австрією та Україною відбудеться Австрійсько-Український День
+          відновлюваної...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Інновації</p>
+          <p class="label label--light-blue label--event">Дискусія</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all march  literatura  dyskusiya prezentatsiya austria free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/6.jpg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">28.03.2019</p>
+          <p class="event__label-time">19:30</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/prezentatsiya-knygy-tani-malyarchuk-synij-kyt-pam-yati-roman/">Презентація
+          книги Тані Малярчук: &#8220;Синій кит пам&#8217;яті. Роман&#8221;</a>
+        <p class="text text--event-info">Роман про забутого українського народного героя В'ячеслава Липинського, опис
+          життя якого майстерно пов'язаний з життям оповідачки: вона шукає в минулому...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Література</p>
+          <p class="label label--light-blue label--event">Дискусія</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="events-wrapper js-events-wrapper container">
+    <h3 class="label label--light-blue label--next-month js-month-label february">Лютий</h3>
+    <div class="event js-event all february  literatura fotografiya  dyskusiya prezentatsiya ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/15.jpg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">28.02.2019</p>
+          <p class="event__label-time">17:00</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/ya-mayu-vtekty-shhob-vyzhyty-abo-zalyshytysya-shhob-pomerty/">„Я
+          маю втекти, щоб вижити &#8211; або залишитися, щоб померти“</a>
+        <p class="text text--event-info">Наслідки радіоактивних вибухів 26 квітня 1986 року в 01:23:44 на радянській АЕС
+          „Володимир Ілліч Ленін” біля українського міста Чорнобиль були і залишаються...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Література</p>
+          <p class="label label--light-blue label--event">Дискусія</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all february  vizualne-mystetstvo fotografiya  vystavka ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/14.jpg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">27.02.2019</p>
+          <p class="event__label-time">16:00</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading" href="http://austriaukraine2019.com/uk/events/dusha-vidnya/">Душа Відня</a>
+        <p class="text text--event-info">У цьому проекті - вперше представленому в музеї "Софія Київська" у травні 2018
+          року - фотограф Петер Лаглер показує своє рідне місто Відень...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Візуальне мистецтво</p>
+          <p class="label label--light-blue label--event">Виставка</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all february  muzyka  dyskusiya lektsiya ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/Thomas-Heher-1.jpg" alt=""
+             class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">23.02.2019</p>
+          <p class="event__label-time">15:00</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/lektsiya-dyrektora-festyvalyu-waves-vienna-thomas-heher/">Тhomas
+          Heher на Music Conference Ukraine</a>
+        <p class="text text--event-info">У рамках Music Conference Ukraine засновник та директор Waves Vienna Тhomas
+          Heher проведе лекцію для музикантів та арт-менеджерів...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Музика</p>
+          <p class="label label--light-blue label--event">Дискусія</p>
+        </div>
+      </div>
+    </div>
+    <div class="event js-event all february  muzyka  kontsert festyval ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/01/1-e1549030991653.jpg" alt=""
+             class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">23.02.2019</p>
+          <p class="event__label-time">21:40</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading" href="http://austriaukraine2019.com/uk/events/vystup-avstrijskogo-gurtu-mynth-v-ramkah-mus/">Виступ
+          гурту Mynth на Music Conference Ukraine</a>
+        <p class="text text--event-info">Цьогорічна конференція буде присвячена темі Make it loud: як працює концертна
+          індустрія. Українські та міжнародні експерти розповідатимуть про можливості ...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Музика</p>
+          <p class="label label--light-blue label--event">Концерт</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="events-wrapper js-events-wrapper container">
+    <h3 class="label label--light-blue label--next-month js-month-label january">Січень</h3>
+    <div class="event js-event all january  literatura  publikatsiya ukraine free">
+      <div class="event-part">
+        <img src="http://austriaukraine2019.com/wp-content/uploads/2019/02/5.jpg" alt="" class="event__img">
+        <div class="event__label">
+          <p class="event__label-time">01.01-31.12</p>
+        </div>
+      </div>
+      <div class="event-part event-part--middle">
+        <a class="heading"
+           href="http://austriaukraine2019.com/uk/events/die-brucke-mist-ukrayinsko-avstrijska-studentska-gazeta/">Die
+          Brücke (Міст): Українсько-австрійська студентська газета</a>
+        <p class="text text--event-info">Історія газети DIE BRÜCKE (Міст) сягає близько п'ятнадцяти років тому, коли
+          вона була вперше видана за ініціативою колишньої австрійської лекторки...</p>
+      </div>
+      <div class="event-part">
+        <div>
+          <p class="label label--light-blue label--event">Література</p>
+          <p class="label label--light-blue label--event">Публікація</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events-wrapper js-events-wrapper container events-wrapper--blured">
+    <h3 class="label label--light-blue label--next-month js-month-label">January</h3>
+      <div class="event js-event urban">
+        <div class="event-part">
+          <img src="../img/event-img.png" alt="" class="event__img">
+          <div class="event__label">
+            <p class="event__label-time">24.02.2019</p>
+            <p class="event__label-time">12:55</p>
+          </div>
+        </div>
+
+        <div class="event-part event-part--middle">
+          <h3 class="heading">Movie Night with Film Director Paul Rosdy</h3>
+          <p class="text text--event-info">The Austrian director Paul Rosdy presents his documentary film KINO WIEN
+            FILM,
+            which was filmed in 2018. KINO WIEN FILM is a cinematic trip through Vienna from 1896 to today. </p>
+        </div>
+        <div class="event-part">
+          <div>
+            <p class="label label--light-blue label--event">Festival</p>
+            <p class="label label--light-blue label--event">Film</p>
+          </div>
+        </div>
+      </div>
+      <div class="event buy theatre js-event">
+        <div class="event-part">
+          <img src="../img/event-img.png" alt="" class="event__img">
+          <div class="event__label">
+            <p class="event__label-time">24.02.2019</p>
+            <p class="event__label-time">12:55</p>
+          </div>
+        </div>
+
+        <div class="event-part event-part--middle">
+          <h3 class="heading">Movie Night with Film Director Paul Rosdy</h3>
+          <p class="text text--event-info">The Austrian director Paul Rosdy presents his documentary film KINO WIEN
+            FILM,
+            which was filmed in 2018. KINO WIEN FILM is a cinematic trip through Vienna from 1896 to today. </p>
+        </div>
+        <div class="event-part">
+          <div>
+            <p class="label label--light-blue label--event">Festival</p>
+            <p class="label label--light-blue label--event">Film</p>
+          </div>
+        </div>
+      </div>
+      <div class="event js-event buy literature">
+        <div class="event-part">
+          <img src="../img/event-img.png" alt="" class="event__img">
+          <div class="event__label">
+            <p class="event__label-time">24.02.2019</p>
+            <p class="event__label-time">12:55</p>
+          </div>
+        </div>
+
+        <div class="event-part event-part--middle">
+          <h3 class="heading">Movie Night with Film Director Paul Rosdy</h3>
+          <p class="text text--event-info">The Austrian director Paul Rosdy presents his documentary film KINO WIEN
+            FILM,
+            which was filmed in 2018. KINO WIEN FILM is a cinematic trip through Vienna from 1896 to today. </p>
+        </div>
+        <div class="event-part">
+          <div>
+            <p class="label label--light-blue label--event">Festival</p>
+            <p class="label label--light-blue label--event">Film</p>
+          </div>
+        </div>
+      </div>
+  </section>
+</main>
+<a href="#" class="button-scroll-top js-scroll-top"></a>
+<footer class="footer">
+  <div class="container container--footer">
+    <nav class="footer-nav">
+      <a href="#" class="footer-nav__link">Home</a>
+      <a href="#" class="footer-nav__link">About</a>
+      <a href="#" class="footer-nav__link">Calendar</a>
+      <a href="#" class="footer-nav__link">Impressions</a>
+      <a href="#" class="footer-nav__link">Partners</a>
+      <a href="#" class="footer-nav__link">Participate</a>
+    </nav>
+  </div>
+</footer>
+<script src="js/main.min-min.js" type="text/javascript"></script>
+
+</body>
+</html>
